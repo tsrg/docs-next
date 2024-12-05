@@ -23,19 +23,11 @@ badges:
 
 ## Синтаксис в 3.x
 
-Во Vue 3 имя события теперь должно быть с префиксом `vnode-`:
+Во Vue 3 имя события теперь должно быть с префиксом `vue:`:
 
 ```html
 <template>
-  <child-component @vnode-updated="onUpdated">
-</template>
-```
-
-Или просто `vnode`, при использовании записи в camelCase:
-
-```html
-<template>
-  <child-component @vnodeUpdated="onUpdated">
+  <child-component @vue:updated="onUpdated">
 </template>
 ```
 
